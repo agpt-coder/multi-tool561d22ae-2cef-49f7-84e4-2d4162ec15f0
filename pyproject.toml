@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "multi-tool"
+version = "0.1.0"
+description = "The Multi-Purpose API Toolkit is designed to offer a wide range of functionality through a single endpoint, making it easier for developers to integrate its features without the need for multiple third-party services. The toolkit provides a variety of endpoints including QR Code Generation, Currency Exchange Rate lookup, IP Geolocation services, Image Resizing, Password Strength Checking, Text-to-Speech conversion, Barcode Generation, Email Validation, Time Zone Conversion, URL Preview generation, PDF Watermarking, and converting RSS Feeds into JSON format. This comprehensive suite aims at simplifying and streamlining developers' tasks by providing a versatile set of tools for different needs, all accessible through one unified API."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.78.0"
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+prisma = "*"
+pydantic = "*"
+python-jose = {version = "^3.3.0", extras = ["cryptography"]}
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
